@@ -536,3 +536,33 @@ body {
     overflow-wrap: break-word;
     font-weight: 400;
 }
+
+.horizon_alert {
+    z-index: 10000;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.95;
+    font-size: 5vh;
+    font-weight: 700;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+@media (orientation: portrait) {
+    .container {
+        display: none;
+    }
+    .horizon_alert {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+  }
+ 
