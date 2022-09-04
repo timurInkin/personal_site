@@ -15,7 +15,7 @@ body {
     font-size: 1.9vh;
     /* line-height: 1; */
     color: black;
-    overflow-y: scroll;
+    overflow-y: hidden;
     
     /* height: 100vh; */
    
@@ -30,6 +30,7 @@ body {
 .container {
     margin: 2vh auto;
     width: 100vw;
+    max-width: 1900px;
     /* max-width: 100vh; */
     max-width: 83.3vw;
 
@@ -469,7 +470,7 @@ body {
 
 
 .contact_numbers {
-    margin-left: ;
+    /* margin-left: ; */
     padding-top: 5vh;
     width: 27.027vw;
 }
@@ -561,14 +562,33 @@ body {
     z-index: 10000;
     display: none;
     position: absolute;
-    background-color: black;
-    opacity: 0.9;
-    font-size: 5vh;
-    font-weight: 700;
-    color: white;
+   
     width: 100vw;
     height: 100vh;
     padding: 0 2vw 3vh 0 2vw;
+}
+
+.alert_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vh;
+    height: 20vh;
+
+    box-shadow: -0.378vw 0.74vh rgb(43, 43, 43, 0.1);
+}
+
+.alert_text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vh;
+    font-weight: 400;
+    color: black;
+
+}
+
+.screen_rotate_img {
+    margin: 3vh;
 }
 
 @media (orientation: portrait) {
