@@ -15,7 +15,7 @@ body {
     font-size: 1.9vh;
     /* line-height: 1; */
     color: black;
-    overflow-y: hidden;
+    overflow-y: scroll;
     
     /* height: 100vh; */
    
@@ -184,7 +184,7 @@ body {
     transform: translateY(17vh);
     background-size: cover; 
     height: 35.47vh;
-    width: 27vw;
+    width: 52.631578947368vh;
  
 
 
