@@ -173,7 +173,7 @@ body {
 
 
 .image_view {
-   
+
     position: relative;
     width: 28vw;
     display: flex;
@@ -518,8 +518,7 @@ body {
 }
 
 .qr_img {
-    /* background: url("../img/qr-code.svg") center no-repeat; */
-    /* background-size: cover;  */
+
     height: 26.315789473684vh;
     width: 26.315789473684vh;
 
@@ -533,24 +532,50 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    /* margin-left: 5%; */
+    margin-left: 5vw;
+
+}
+
+.social {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.social_item {
+    height: 5vh;
+    width: 5vh;
+    background-color: #75c3f0;
+    border-radius: 50%;
+    /* display: inline-block; */
+    /* margin-right: 2.16vw; */
+    box-shadow: 0 0 0 0.16vw black;
+    cursor: pointer;
+
+}
+
+.social_img_view {
+
+    position: relative;
+    /* width: 5vh; */
+    display: flex;
+    /* align-items:center; */
+    justify-content: center;
+}
+
+.social_img {
+    position: absolute;
+    transform: translateY(35%);
+    background-size: cover;
+    width: 60%;
 
 }
 
 
-/* .social_item {
-    height: 55px;
-    width: 55px;
-    background-color: #75c3f0;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 40px;
-    box-shadow: 0 0 0 3px black;
-    cursor: pointer;
-
-} */
-
 .slogan--contact {
+    width: 30%;
     font-size: 2.2vh;
     color: rgb(36, 36, 36);
     line-height: 1.15;
