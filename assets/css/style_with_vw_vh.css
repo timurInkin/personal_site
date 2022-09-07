@@ -83,7 +83,9 @@ body {
 
     width: 15.7vw;
     height: 5.8vh;
-    background: #e88280;
+    /* background: #e88280; */
+    background: #fff;
+
     /* padding: .1vh .342vw; */
     transform: rotate(0deg);
 
@@ -117,6 +119,8 @@ body {
 .nav-btn.active {
     font-weight: 700;
     background: #f4cf72;
+    /* background: #e88280; */
+
 }
 
 .tabs {
@@ -198,7 +202,11 @@ body {
 }
 
 .info_title {
-    background: #7cc29f;
+    /* background: #7cc29f; */
+    background: #f4cf72;
+    /* background: #e88280; */
+
+
     height: 8.42vh;
 
     display: flex;
@@ -365,14 +373,15 @@ body {
 }
 
 .line {
-
+    
+    content: "";
     display: block;
     z-index: 10;
     position: absolute;
     top: 15vh;
     left: 0;
     width: 63.9vw;
-    border: .108vw solid #242424;
+    border: .11vw solid #242424;
 
 
 }
@@ -443,6 +452,8 @@ body {
 
 .dot.active {
     background-color: #7cc29f;
+    /* background: #f4cf72; */
+
 }
 
 
