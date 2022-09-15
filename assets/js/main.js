@@ -2,7 +2,10 @@
 const navBtn = document.querySelectorAll(".nav-btn");
 const tabsItem = document.querySelectorAll(".tab");
 
-navBtn.forEach(onNavBtnClick,)
+
+navBtn.forEach(onNavBtnClick)
+
+// function onLetterClick()
 
 function onNavBtnClick(item) {
     item.addEventListener("click", function() {
@@ -35,4 +38,20 @@ function onNavBtnClick(item) {
 
 document.querySelector(".nav-btn").click();
 
+var letterContainer = document.querySelector(".letter_container");
+var contactInner = document.querySelector(".contact_inner");
 
+var letterBtn = document.getElementById("letter_btn");
+var closeBtn = document.getElementById("close_btn");
+
+letterBtn.onclick = function() {
+    console.log('letter on click');
+    letterContainer.style.display = 'block';
+
+    contactInner.style.display = 'none';
+
+};
+closeBtn.onclick = function() {
+    letterContainer.style.display = 'none';
+    contactInner.style.display = 'flex';
+};

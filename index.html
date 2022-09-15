@@ -20,13 +20,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
     <title>Timur Inkin CV</title>
 </head>
 
 <body>
 
 
-    <div class="container">
+    <div class="container" id="main_container">
 
         <header class="header">
             <div class="header_inner">
@@ -45,7 +46,7 @@
             <div class="tab" id="profile">
                 <div class="info">
                     <div class="image_view">
-                        <img class="photo" src="/assets/img/ava.jpeg">
+                        <img class="photo" src="assets/img/ava.jpeg">
                     </div>
                     <div class="info_inner">
                         <div class="info_title">Обо мне</div>
@@ -58,9 +59,11 @@
                                 навыки программирования, дизайна и верстки. Заинтересован
                                 в работе над проектами в сфере развития бизнеса и IT.</div>
                         </div>
+
                     </div>
                 </div>
             </div>
+
             <div class="tab" id="education">
                 <div class="column">
                     <div class="info_title">Университет</div>
@@ -173,8 +176,10 @@
 
                         <div class="inner_item">
                             <div class="education_years">2020</div>
-                            <div class="education_title education_title_post">Международный инженерный чемпионат "CASE-IN"</div>
-                            <div class="education_description">Концепция модернизации освещения парков, трасс, скверов</div>
+                            <div class="education_title education_title_post">Международный инженерный чемпионат
+                                "CASE-IN"</div>
+                            <div class="education_description">Концепция модернизации освещения парков, трасс, скверов
+                            </div>
 
                         </div>
 
@@ -341,7 +346,7 @@
                                 команде с дизайнером и фотографом, занимаюсь созданием сайтов и веб-приложений.</div>
 
                         </div>
-                        
+
                     </div>
                     <!-- <div class="inner">
                             <div class="inner_item">
@@ -397,7 +402,7 @@
                     <div class="inner inner--edu">
                         <div class="inner_item">
                             <div class="tool_name">UX/UI</div>
-                            <div class="education_description">Adode XD, Illustrator, Figma, Miro</div>
+                            <div class="education_description">Adobe XD, Illustrator, Figma, Miro</div>
 
                         </div>
                         <div class="inner_item">
@@ -413,7 +418,9 @@
                         <div class="inner_item">
                             <div class="tool_name">Университет</div>
                             <div class="education_description">Весь период обучения был старостой группы, активистом
-                                и организатором мероприятий своего факультета. <!--, лучшим выпускником (дважды)--></div>
+                                и организатором мероприятий своего факультета.
+                                <!--, лучшим выпускником (дважды)-->
+                            </div>
                         </div>
                         <!-- <div class="inner_item">
                                 <div class="education_title">Работа в команде</div>
@@ -431,7 +438,8 @@
                                 <a class="link" href="https://gl-18.ru" target="_blank">Автокомпонент</a>
                             </div>
                             <div class="education_description">
-                                Работа с заказчиком. Составление технического задания, организация работы команды. Проработка
+                                Работа с заказчиком. Составление технического задания, организация работы команды.
+                                Проработка
                                 дизайна, написание сайта, подбор домена и хостинга.
 
                             </div>
@@ -484,9 +492,8 @@
                                     <p>
                                         Доступен по почте и в телеграме.
                                     </p>
-                                    <p>
-                                        
-                                    </p>
+                                    <button id="letter_btn" class="letter_btn" type="button">
+                                        Сопроводительное письмо</button>
 
                                 </div>
                             </div>
@@ -544,15 +551,84 @@
                 </div>
                 <!--contact_inner-->
 
+                <div id="letter_container" class="letter_container">
+                    <div class="info_title">
+                        <p>Сопроводительное письмо</p>
+                        <a class="download_btn" href="assets/pdf/Timur_Inkin_CV.pdf" download="" title="Скачать pdf версию резюме">
+                             <i class="fa-solid fa-file-arrow-down"></i>
+                        </a>
+                        <div id="close_btn" class="close_btn">
+                            <i class="fa-solid fa-xmark fa-xl"></i>
+                        </div>
+                    </div>
+                    <div class="letter_inner">
+                        <div class="letter_text">
+                            <p>Добрый день! Меня зовут Инкин Тимур, мне 22 года. На данный момент обучаюсь на 2 курсе
+                                магистратуры МФТИ х МШУ Сколково по программе MOOVE на специальности “Цифровые
+                                технологии в
+                                бизнесе и продуктовый менеджмент”. За первый год учебы в МФТИ нам дали хард-скиллы в
+                                области
+                                мобильной разработки, аналитики данных, машинного обучения, глубокого обучения,
+                                компьютерного
+                                зрения и обработки естественного языка.
+                            </p>
+                            <p>
+                                С четвертого курса бакалавриата начал работать инженером-проектировщиком систем
+                                электроснабжения. Совместно с проектировщиками смежных отделов и архитекторами мы
+                                проектировали
+                                информационную модель будущего здания. Этот опыт показал, что я легко нахожу общий язык
+                                с
+                                командой. Параллельно с этим занимался научной деятельностью — математическим и
+                                компьютерным
+                                моделированием физических процессов, совместной работой с заведующим кафедрой —
+                                созданием и
+                                доработкой математической модели процесса нанесения хромовых покрытий, написанием
+                                консольного
+                                приложения на Python для моделирования процесса.
+                            </p>
+                            <p>
+
+                                За период обучение в МФТИ было несколько интересных проектов:
+
+                                - сделали PoremonWiki как финальный проект по андроид-разработке (сделали в срок, успели
+                                потестить и отладить)
+                                - телеграм-бот-кинокритик, который выдает фильм-рекомендацию и генерирует рецензию к
+                                нему
+                                - предсказывали процент продаж автомобилей по звонкам в автосалон
+                            </p>
+                            <p>
+                                Этим летом в качестве проджекта и веб-разработчика собрал команду и создал “под ключ”
+                                лендинг
+                                для производства — от дизайн-макетов до копирайта и фотографий.
+                            </p>
+                            <p>
+                                Разнообразие проектов показывает, что я не теряюсь даже в новой для себя области, умею
+                                находить
+                                уникальные решения и продвигать их. Умею собирать команду и организовывать ее работу. Не
+                                теряюсь
+                                в больших объемах информации и документации.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
             <!--contact-->
 
+
         </div> <!-- TabsItem -->
+
+
 
 
     </div>
     <!--container-->
+
+
+
     <div class="horizon_alert">
         <div class="alert_inner">
             <div class="alert_text">Пожалуйста, переверни телефон</div>
@@ -570,6 +646,8 @@
 
 
     <script src="/assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/4a627238d2.js" crossorigin="anonymous"></script>
+
 
 </body>
 
