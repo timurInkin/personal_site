@@ -222,9 +222,11 @@ body {
 
 .photo {
     position: absolute;
+    /* height: 28vh; */
     transform: translateY(17vh);
     background-size: cover;
     width: 100%;
+    /* height: 100%; */
 }
 
 
@@ -416,7 +418,7 @@ body {
     display: block;
     z-index: 10;
     position: absolute;
-    top: 15vh;
+    top: 16vh;
     left: 0;
     width: 63.9vw;
     border: .11vw solid #242424;
@@ -437,7 +439,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 62vw;
-    margin-bottom: 12vh;
+    margin-bottom: 10vh;
 }
 
 .underline {
@@ -556,6 +558,7 @@ body {
 
 .link:hover {
     text-decoration: underline;
+    color: blue
 }
 
 .contact_qr {
@@ -671,7 +674,7 @@ body {
     padding-right:3vw;
 
 
-    font-size: 2.2vh;
+    font-size: 1.2vw;
     font-family: 'Noto Sans', sans-serif;
 }
 
