@@ -1,57 +1,55 @@
+const navButtons = document.querySelectorAll(".nav-btn");
+const tabs = document.querySelectorAll(".tab");
+const letterContainer = document.querySelector(".letter_container");
+const contactInner = document.querySelector(".contact_inner");
+const letterButton = document.getElementById("letter_btn");
+const closeButton = document.getElementById("close_btn");
 
-const navBtn = document.querySelectorAll(".nav-btn");
-const tabsItem = document.querySelectorAll(".tab");
+function activateTab(button) {
+    const tabId = button.dataset.tab;
+    const tab = document.querySelector(tabId);
 
+    if (!tab || button.classList.contains("active")) {
+        return;
+    }
 
-navBtn.forEach(onNavBtnClick)
-
-// function onLetterClick()
-
-function onNavBtnClick(item) {
-    item.addEventListener("click", function() {
-        let currentBtn = item;
-        console.log(currentBtn);
-        let tabId = currentBtn.getAttribute("data-tab");
-        console.log(tabId);
-        let currentTab = document.querySelector(tabId);
-
-
-        if (!currentBtn.classList.contains('active')) {
-
-        
-            console.log(currentTab);
-
-            navBtn.forEach(function(item) {
-                item.classList.remove('active');
-            });
-            tabsItem.forEach(function(item) {
-                item.classList.remove('active');
-            });
-
-            currentBtn.classList.add('active');
-            currentTab.classList.add('active');
-         }
-
+    navButtons.forEach((item) => {
+        item.classList.remove("active");
+        item.setAttribute("aria-selected", "false");
     });
+
+    tabs.forEach((item) => {
+        item.classList.remove("active");
+        item.hidden = true;
+    });
+
+    button.classList.add("active");
+    button.setAttribute("aria-selected", "true");
+    tab.classList.add("active");
+    tab.hidden = false;
 }
 
+navButtons.forEach((button) => {
+    button.setAttribute("aria-selected", "false");
+    button.addEventListener("click", () => activateTab(button));
+});
 
-document.querySelector(".nav-btn").click();
+tabs.forEach((tab) => {
+    tab.hidden = true;
+});
 
-var letterContainer = document.querySelector(".letter_container");
-var contactInner = document.querySelector(".contact_inner");
+if (navButtons.length > 0) {
+    activateTab(navButtons[0]);
+}
 
-var letterBtn = document.getElementById("letter_btn");
-var closeBtn = document.getElementById("close_btn");
+if (letterButton && closeButton && letterContainer && contactInner) {
+    letterButton.addEventListener("click", () => {
+        letterContainer.style.display = "block";
+        contactInner.style.display = "none";
+    });
 
-letterBtn.onclick = function() {
-    console.log('letter on click');
-    letterContainer.style.display = 'block';
-
-    contactInner.style.display = 'none';
-
-};
-closeBtn.onclick = function() {
-    letterContainer.style.display = 'none';
-    contactInner.style.display = 'flex';
-};
+    closeButton.addEventListener("click", () => {
+        letterContainer.style.display = "none";
+        contactInner.style.display = "";
+    });
+}
